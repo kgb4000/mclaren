@@ -1,10 +1,12 @@
 import './globals.scss'
 import { Inter } from 'next/font/google'
-import Head from 'next/head'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Rent a McLaren in Las Vegas | Supercar Rentals Las Vegas',
+  title: {
+    default: 'Rent a McLaren in Las Vegas | Supercar Rentals Las Vegas',
+    template: '%s | Supercar Rentals Las Vegas',
+  },
   description:
     'Feel the adrenaline rush when you rent a McLaren in Las Vegas from Supercars Las Vegas. Your unforgettable driving experience is just a click away!',
 }

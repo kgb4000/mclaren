@@ -1,10 +1,18 @@
-import Head from 'next/head'
 import Footer from './components/Footer'
+
+export const metadata = {
+  metadataBase: new URL('https://rentamclarenlasvegas.com'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+    },
+  },
+}
 
 export default function Home() {
   return (
     <>
-      
       <header></header>
       <main>
         <div className="container">
@@ -13,6 +21,7 @@ export default function Home() {
             src="/mclaren-570GT.webp"
             alt="Rent a McLaren in Las Vegas."
             title="Rent a McLaren in Las Vegas"
+            loading="lazy"
           />
         </div>
 
@@ -31,7 +40,7 @@ export default function Home() {
             roads, or attending a glamorous event, our fleet of exotic cars is
             here to make your stay in Sin City one for the books.
           </p>
-          <button>Reserve Your McLaren Today!</button>
+          <button>Call to Reserve Your McLaren Today!</button>
           <h2>Our Exquisite Fleet</h2>
           <p>
             Supercar Rentals Las Vegas is proud to present two of the world's
@@ -45,6 +54,7 @@ export default function Home() {
                 src="/mclaren-570GT.webp"
                 alt="Rent a McLaren 570GT in Las Vegas."
                 title="Rent a McLaren 570GT in Las Vegas."
+                loading="lazy"
               />
               <p>
                 Experience the perfect blend of luxury, comfort, and sportiness
@@ -63,6 +73,7 @@ export default function Home() {
                 src="/mclaren-570S.webp"
                 alt="Rent a McLaren 570S in Las Vegas."
                 title="Rent a McLaren 570S in Las Vegas."
+                loading="lazy"
               />
               <p>
                 Enter the world of pure exhilaration with the McLaren 570S. This
@@ -219,7 +230,7 @@ export default function Home() {
               No, pets are not allowed in our vehicles. We strive to maintain
               the pristine condition of our fleet for all customers to enjoy.
             </p>
-            <button>Reserve Your McLaren Today!</button>
+            <button>Call to Reserve Your McLaren Today!</button>
           </div>
         </div>
       </main>
