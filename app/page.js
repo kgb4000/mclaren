@@ -1,12 +1,7 @@
-import Footer from './components/Footer'
-
 export const metadata = {
   metadataBase: new URL('https://rentamclarenlasvegas.com'),
   alternates: {
     canonical: '/',
-    languages: {
-      'en-US': '/en-US',
-    },
   },
 }
 
@@ -248,7 +243,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   )
 }
