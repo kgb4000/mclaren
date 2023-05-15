@@ -94,8 +94,15 @@ export default function Home() {
           </p>
           <h2>Self Driving Day Trips Near Las Vegas</h2>
           <p>
-            Don't just rent your supercar and cruse the Vegas strip. Take a
-            scenic driving tour to one of these exotic locations near Vegas.
+            Don't just rent your supercar and cruse the{' '}
+            <a
+              href="https://www.lasvegashowto.com/las-vegas-strip-map"
+              target="_blank"
+            >
+              Las Vegas strip
+            </a>
+            . Take a scenic driving tour to one of these exotic locations near
+            Vegas.
           </p>
           <h3>Hover Dam</h3>
           <h3>Red Rock Canyon Scenic Byway</h3>
