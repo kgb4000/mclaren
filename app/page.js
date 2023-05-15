@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <main>
         <HeroSection
-          heroText="Rent a Maclaren in Las Vegas"
+          heroText="Rent a McLaren in Las Vegas"
           subText="Elevate your Vegas adventure with an unbelievable driving experience."
           backgroundImage="images/mclaren-570GT.webp"
           backgroundHeight="100vh"
@@ -116,6 +116,28 @@ export default function Home() {
             <h3>Blue Diamond Bend</h3>
             <h3>Valley of Fire State Park</h3>
             <h3>Death Valley National Park</h3>
+            <Button>See more locations</Button>
+          </div>
+        </section>
+        <section>
+          <div className="container">
+            <h2>Upcoming Event in Las Vegas</h2>
+            <p>
+              Don't just rent your supercar and cruse the{' '}
+              <a
+                href="https://www.lasvegashowto.com/las-vegas-strip-map"
+                target="_blank"
+              >
+                Las Vegas strip
+              </a>
+              . Take a scenic driving tour to one of these exotic locations near
+              Vegas.
+            </p>
+            <h3>NAHB International Builders' Show 2024 Las Vegas</h3>
+            <h3>Allegiant Stadium - Las Vegas Raiders</h3>
+            <h3>CES 2024 Las Vegas</h3>
+            <h3>SHOT Show 2024 Las Vegas</h3>
+            <h3>World of Concrete 2024 Las Vegas</h3>
             <Button>See more locations</Button>
           </div>
         </section>
