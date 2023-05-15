@@ -131,7 +131,7 @@ export default function Home() {
                 <h2>Why Choose Supercar Rentals Las Vegas</h2>
                 <p>
                   Although there are many exotic car rental companies in Las
-                  Vegas, there are reasons to get your car form us.
+                  Vegas, there are reasons to get your car from us.
                 </p>
                 <div className="faq">
                   <h3>#1. Unrivalled Fleet</h3>
