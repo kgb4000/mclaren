@@ -21,15 +21,18 @@ export default function Home() {
             src="/mclaren-570GT.webp"
             alt="Rent a McLaren in Las Vegas."
             title="Rent a McLaren in Las Vegas"
-            loading="lazy"
           />
         </div>
 
         <div className="container">
+          <h2>Rent a MacLaren and Turn Heads</h2>
+          <p>At Supercar Rentals Las Vegas, we turn dreams into reality.</p>
           <p>
-            At Supercar Rentals Las Vegas, we turn dreams into reality by
-            offering you the most luxurious and thrilling McLaren rental
-            experience in fabulous Las Vegas.
+            We give you the most luxurious and thrilling{' '}
+            <a href="https://cars.mclaren.com/en" target="_blank">
+              McLaren
+            </a>{' '}
+            rental experience in the fabulous of Las Vegas.
           </p>
           <p>
             Our mission is to provide you with an unforgettable driving
@@ -94,6 +97,17 @@ export default function Home() {
             equipped with state-of-the-art technology, allowing you to
             experience the full potential of these engineering marvels.
           </p>
+          <h2>Self Driving Day Trips Near Las Vegas</h2>
+          <p>
+            Don't just rent your supercar and cruse the Vegas strip. Take a
+            scenic driving tour to one of these exotic locations near Vegas.
+          </p>
+          <h3>Hover Dam</h3>
+          <h3>Red Rock Canyon Scenic Byway</h3>
+          <h3>Blue Diamond Bend</h3>
+          <h3>Valley of Fire State Park</h3>
+          <h3>Death Valley National Park</h3>
+          <button>See more locations</button>
           <h2>Why Choose Supercar Rentals Las Vegas</h2>
           <p>
             Although there are many exotic car rental companies in Las Vegas,
