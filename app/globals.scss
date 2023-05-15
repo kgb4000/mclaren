@@ -14,6 +14,10 @@ img {
   margin: 1rem 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -21,6 +25,11 @@ h4,
 h5,
 h6 {
   margin: 1.5rem 0;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
 }
 
 .faq {
@@ -38,6 +47,24 @@ header {
   max-width: 960px;
   padding: 0 1.2rem;
   margin: 0 auto;
+}
+
+.medium-container {
+  max-width: 1440px;
+  padding: 0 1.2rem;
+  margin: 0 auto;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+.btn {
+  padding: 0 1.2rem;
+  margin: 0 auto;
+  margin: 2rem 0;
+
+  align-self: center;
 }
 
 p {

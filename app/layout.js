@@ -1,3 +1,4 @@
+import StyledComponentsRegistry from 'lib/registry'
 import './globals.scss'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
@@ -10,13 +11,17 @@ export const metadata = {
   },
   description:
     'Feel the adrenaline rush when you rent a McLaren in Las Vegas from Supercars Las Vegas. Your unforgettable driving experience is just a click away!',
+  metadataBase: new URL('https://rentamclarenlasvegas.com'),
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
         <Footer />
       </body>
     </html>
