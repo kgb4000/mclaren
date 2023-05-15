@@ -52,6 +52,7 @@ export default function Home() {
                   title="Rent a McLaren 570GT in Las Vegas."
                   loading="lazy"
                 />
+                <h4>$649.00 per day</h4>
                 <p>
                   Experience the perfect blend of luxury, comfort, and
                   sportiness with our McLaren 570GT. Born from the McLaren
@@ -71,6 +72,7 @@ export default function Home() {
                   title="Rent a McLaren 570S in Las Vegas."
                   loading="lazy"
                 />
+                <h4>$649.00 per day</h4>
                 <p>
                   Enter the world of pure exhilaration with the McLaren 570S.
                   This elegant beast from the McLaren Sports Series is a
@@ -98,7 +100,7 @@ export default function Home() {
           <Button>Call to Reserve Your McLaren Today!</Button>
         </div>
         <section>
-          <div className="container">
+          <div className="medium-container">
             <h2>Self Driving Day Trips Near Las Vegas</h2>
             <p>
               Don't just rent your supercar and cruse the{' '}
@@ -116,29 +118,19 @@ export default function Home() {
             <h3>Blue Diamond Bend</h3>
             <h3>Valley of Fire State Park</h3>
             <h3>Death Valley National Park</h3>
-            <Button>See more locations</Button>
+            <Button>See more locations near Vegas</Button>
           </div>
         </section>
         <section>
-          <div className="container">
+          <div className="medium-container">
             <h2>Upcoming Event in Las Vegas</h2>
-            <p>
-              Don't just rent your supercar and cruse the{' '}
-              <a
-                href="https://www.lasvegashowto.com/las-vegas-strip-map"
-                target="_blank"
-              >
-                Las Vegas strip
-              </a>
-              . Take a scenic driving tour to one of these exotic locations near
-              Vegas.
-            </p>
+            <p></p>
             <h3>NAHB International Builders' Show 2024 Las Vegas</h3>
             <h3>Allegiant Stadium - Las Vegas Raiders</h3>
             <h3>CES 2024 Las Vegas</h3>
             <h3>SHOT Show 2024 Las Vegas</h3>
             <h3>World of Concrete 2024 Las Vegas</h3>
-            <Button>See more locations</Button>
+            <Button>See more events in Vegas</Button>
           </div>
         </section>
         <section>
@@ -156,7 +148,7 @@ export default function Home() {
                   Vegas, there are reasons to get your car from us.
                 </p>
                 <div className="faq">
-                  <h3>#1. Unrivalled Fleet</h3>
+                  <h3>#1. Best McLaren Cars</h3>
                   <p>
                     Our collection comprises the most sought-after models, from
                     the exhilarating McLaren 570S to the luxurious McLaren
@@ -193,9 +185,10 @@ export default function Home() {
                 </div>
               </div>
             </Why>
+            <Button>Call today to reserve your McLaren!</Button>
           </div>
         </section>
-        <Button>Call today to reserve your McLaren!</Button>
+
         <section>
           <div className="container">
             <h2>About Us</h2>
@@ -359,11 +352,16 @@ const Faq = styled.div`
 const BaseImage = styled.div`
   display: flex;
   justify-content: center;
+  align-self: center;
   background-image: url('/images/mclaren-base-image.jpg');
+  background-repeat: no-repeat;
   background-position: center center;
-  height: 200px;
+  background-size: cover;
+  margin-top: 2rem;
+  height: 300px;
+  color: #fff;
   @media screen and (min-width: 900px) {
-    height: 700px;
+    height: 900px;
   }
 `
 

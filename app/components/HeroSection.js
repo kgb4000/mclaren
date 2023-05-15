@@ -37,7 +37,7 @@ const Hero = styled('span')`
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.42),
-      rgba(162, 155, 254, 0.35)
+      rgba(162, 0, 0, 0.35)
     ),
     url(${(props) => props.backgroundImage});
   background-position: center;
@@ -62,7 +62,7 @@ const Hero = styled('span')`
 
   @media (min-width: 768px) {
     h1 {
-      font-size: 5rem;
+      font-size: 6rem;
     }
 
     p {
