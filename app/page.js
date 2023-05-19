@@ -16,30 +16,45 @@ export default function Home() {
           buttonLink=""
         />
         <section>
-          <div className="container">
-            <h2>Rent a McLaren and Turn Heads</h2>
-            <p>At Supercar Rentals Las Vegas, we turn dreams into reality.</p>
-            <p>
-              We give you the most luxurious and thrilling{' '}
-              <a href="https://cars.mclaren.com/en" target="_blank">
-                McLaren
-              </a>{' '}
-              rental experience in the fabulous of Las Vegas.
-            </p>
-            <p>
-              Our mission is to provide you with an unforgettable driving
-              adventure that will elevate your Vegas experience to new heights.
-            </p>
-            <p>
-              Whether you're cruising the Strip, exploring the surrounding
-              scenic roads, or attending a glamorous event, our fleet of exotic
-              cars is here to make your stay in Sin City one for the books.
-            </p>
+          <div className="medium-container">
+            <Intro>
+              <img
+                src="images/rent-a-mclaren-las-vegas.jpg"
+                alt="Rent a McLaren 570GT in Las Vegas."
+                title="Rent a McLaren 570GT in Las Vegas."
+                loading="lazy"
+                width="1920px"
+              />
+              <div>
+                <h2>Rent a McLaren and Turn Heads</h2>
+                <p>
+                  At Supercar Rentals Las Vegas, we turn dreams into reality.
+                </p>
+                <p>
+                  We give you the most luxurious and thrilling{' '}
+                  <a href="https://cars.mclaren.com/en" target="_blank">
+                    McLaren
+                  </a>{' '}
+                  rental experience in the fabulous of Las Vegas.
+                </p>
+                <p>
+                  Our mission is to provide you with an unforgettable driving
+                  adventure that will elevate your Vegas experience to new
+                  heights.
+                </p>
+                <p>
+                  Whether you're cruising the Strip, exploring the surrounding
+                  scenic roads, or attending a glamorous event, our fleet of
+                  exotic cars is here to make your stay in Sin City one for the
+                  books.
+                </p>
+              </div>
+            </Intro>
+          </div>
+          <div className="btn">
+            <Button>Call to Reserve Your McLaren Today!</Button>
           </div>
         </section>
-        <div className="btn">
-          <Button>Call to Reserve Your McLaren Today!</Button>
-        </div>
         <section>
           <div className="medium-container">
             <h2>Our McLarens for Rent</h2>
@@ -101,7 +116,7 @@ export default function Home() {
         </div>
         <section>
           <div className="medium-container">
-            <h2>Self Driving Day Trips Near Las Vegas</h2>
+            <h2>Take a Self Driving Day Trip Near Las Vegas in a Supercar</h2>
             <p>
               Don't just rent your supercar and cruse the{' '}
               <a
@@ -113,18 +128,85 @@ export default function Home() {
               . Take a scenic driving tour to one of these exotic locations near
               Vegas.
             </p>
-            <h3>Hover Dam</h3>
-            <h3>Red Rock Canyon Scenic Byway</h3>
-            <h3>Blue Diamond Bend</h3>
+            <PlacesToVisit>
+              <div className="places">
+                <img
+                  src="images/drive-through-death-valley.png"
+                  alt="Driving through Death Valley near Las Vegas."
+                  title="Driving through Death Valley near Las Vegas."
+                  loading="lazy"
+                  width="1920px"
+                  height="auto"
+                />
+                <h3>Hover Dam</h3>
+              </div>
+              <div className="places">
+                <img
+                  src="images/drive-through-death-valley.png"
+                  alt="Driving through Death Valley near Las Vegas."
+                  title="Driving through Death Valley near Las Vegas."
+                  loading="lazy"
+                  width="1920px"
+                  height="auto"
+                />
+                <h3>Red Rock Canyon Scenic Byway</h3>
+              </div>
+              <div className="places">
+                <img
+                  src="images/drive-through-death-valley.png"
+                  alt="Driving through Death Valley near Las Vegas."
+                  title="Driving through Death Valley near Las Vegas."
+                  loading="lazy"
+                  width="1920px"
+                  height="auto"
+                />
+                <h3>Death Valley National Park</h3>
+              </div>
+            </PlacesToVisit>
+            <PlacesToVisit>
+              <div className="places">
+                <img
+                  src="images/drive-through-death-valley.png"
+                  alt="Driving through Death Valley near Las Vegas."
+                  title="Driving through Death Valley near Las Vegas."
+                  loading="lazy"
+                  width="1920px"
+                  height="auto"
+                />
+                <h3>Hover Dam</h3>
+              </div>
+              <div className="places">
+                <img
+                  src="images/drive-through-death-valley.png"
+                  alt="Driving through Death Valley near Las Vegas."
+                  title="Driving through Death Valley near Las Vegas."
+                  loading="lazy"
+                  width="1920px"
+                  height="auto"
+                />
+                <h3>Red Rock Canyon Scenic Byway</h3>
+              </div>
+              <div className="places">
+                <img
+                  src="images/drive-through-death-valley.png"
+                  alt="Driving through Death Valley near Las Vegas."
+                  title="Driving through Death Valley near Las Vegas."
+                  loading="lazy"
+                  width="1920px"
+                  height="auto"
+                />
+                <h3>Death Valley National Park</h3>
+              </div>
+            </PlacesToVisit>
+            {/* <h3>Blue Diamond Bend</h3>
             <h3>Valley of Fire State Park</h3>
-            <h3>Death Valley National Park</h3>
+            <h3></h3> */}
             <Button>See more locations near Vegas</Button>
           </div>
         </section>
         <section>
           <div className="medium-container">
             <h2>Upcoming Event in Las Vegas</h2>
-            <p></p>
             <h3>NAHB International Builders' Show 2024 Las Vegas</h3>
             <h3>Allegiant Stadium - Las Vegas Raiders</h3>
             <h3>CES 2024 Las Vegas</h3>
@@ -145,7 +227,7 @@ export default function Home() {
                 <h2>Why Choose Supercar Rentals Las Vegas</h2>
                 <p>
                   Although there are many exotic car rental companies in Las
-                  Vegas, there are reasons to get your car from us.
+                  Vegas, there are reasons to rent your car from us.
                 </p>
                 <div className="faq">
                   <h3>#1. Best McLaren Cars</h3>
@@ -313,6 +395,14 @@ export default function Home() {
   )
 }
 
+const Intro = styled.div`
+  @media screen and (min-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+`
+
 const CarsForRent = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -373,6 +463,19 @@ const Why = styled.div`
 
     h2 {
       text-align: left;
+    }
+  }
+`
+
+const PlacesToVisit = styled.div`
+  @media screen and (min-width: 900px) {
+    display: flex;
+    justify-content: space-between;
+
+    .places {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      text-align: center;
     }
   }
 `

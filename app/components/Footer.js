@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <p>&copy;{new Date().getFullYear()} Supercar Rentals Las Vegas.</p>
+        <p>Rent a McLaren Las Vegas &copy;{new Date().getFullYear()}.</p>
       </footer>
     </>
   )
