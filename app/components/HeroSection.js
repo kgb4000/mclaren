@@ -20,7 +20,7 @@ const HeroSection = ({
           <p>{subText}</p>
           {buttonText && (
             <a href={buttonLink}>
-              <Button>{buttonText}</Button>
+              <WhiteButton>{buttonText}</WhiteButton>
             </a>
           )}
         </div>
@@ -47,16 +47,21 @@ const Hero = styled('span')`
   max-width: 100vw;
 
   @media only screen and (min-device-width: 360px) {
+    color: #f4b755;
+    color: #fff;
+
     h1 {
       font-size: 2.5rem;
       font-weight: 900;
       margin-bottom: 1rem;
+      text-shadow: 2px 4px #000;
     }
 
     p {
       font-size: 1.4rem;
       line-height: 1.6;
       font-weight: 300;
+      text-shadow: 1px 2px #000;
     }
   }
 
@@ -68,6 +73,7 @@ const Hero = styled('span')`
     p {
       font-size: 1.6rem;
       line-height: 1.4;
+      font-weight: 600;
     }
   }
 
@@ -76,6 +82,11 @@ const Hero = styled('span')`
     text-align: center;
     font-weight: 700;
   }
+`
+
+const WhiteButton = styled(Button)`
+  color: #fff;
+  border-color: #fff;
 `
 
 export default HeroSection

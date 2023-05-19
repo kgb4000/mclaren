@@ -44,20 +44,19 @@ export default function Home() {
                 </p>
                 <p>
                   Whether you're cruising the Strip, exploring the surrounding
-                  scenic roads, or attending a glamorous event, our fleet of
-                  exotic cars is here to make your stay in Sin City one for the
-                  books.
+                  scenic roads, or attending a glamorous event, driving a
+                  McLaren can make your stay in Sin City one for the books.
                 </p>
               </div>
             </Intro>
           </div>
-          <div className="btn">
-            <Button>Call to Reserve Your McLaren Today!</Button>
-          </div>
         </section>
+        <div className="btn">
+          <Button>Call to Reserve Your McLaren Today!</Button>
+        </div>
         <section>
           <div className="medium-container">
-            <h2>Our McLarens for Rent</h2>
+            <h2>Our McLaren Vehicles</h2>
             <CarsForRent>
               <Car>
                 <h3>McLaren 570GT - Elegance Meets Power</h3>
@@ -116,8 +115,8 @@ export default function Home() {
         </div>
         <section>
           <div className="medium-container">
-            <h2>Take a Self Driving Day Trip Near Las Vegas in a Supercar</h2>
-            <p>
+            <h2>Take a Scenic Drive Near Las Vegas in a McLaren</h2>
+            <p className="center">
               Don't just rent your supercar and cruse the{' '}
               <a
                 href="https://www.lasvegashowto.com/las-vegas-strip-map"
@@ -143,8 +142,8 @@ export default function Home() {
               <div className="places">
                 <img
                   src="images/drive-through-death-valley.png"
-                  alt="Driving through Death Valley near Las Vegas."
-                  title="Driving through Death Valley near Las Vegas."
+                  alt="Driving through Red Rock Canyon Scenic Byway."
+                  title="Driving through Red Rock Canyon Scenic Byway."
                   loading="lazy"
                   width="1920px"
                   height="auto"
@@ -167,43 +166,43 @@ export default function Home() {
               <div className="places">
                 <img
                   src="images/drive-through-death-valley.png"
-                  alt="Driving through Death Valley near Las Vegas."
-                  title="Driving through Death Valley near Las Vegas."
+                  alt="Driving through Pyramid Lake Scenic Byway near Las Vegas."
+                  title="Driving through Pyramid Lake Scenic Byway near Las Vegas."
                   loading="lazy"
                   width="1920px"
                   height="auto"
                 />
-                <h3>Hover Dam</h3>
+                <h3>Pyramid Lake Scenic Byway</h3>
               </div>
               <div className="places">
                 <img
                   src="images/drive-through-death-valley.png"
-                  alt="Driving through Death Valley near Las Vegas."
-                  title="Driving through Death Valley near Las Vegas."
+                  alt="Driving through Valley of Fire State Park."
+                  title="Driving through Valley of Fire State Park."
                   loading="lazy"
                   width="1920px"
                   height="auto"
                 />
-                <h3>Red Rock Canyon Scenic Byway</h3>
+                <h3>Valley of Fire State Park</h3>
               </div>
               <div className="places">
                 <img
                   src="images/drive-through-death-valley.png"
-                  alt="Driving through Death Valley near Las Vegas."
-                  title="Driving through Death Valley near Las Vegas."
+                  alt="Driving through Blue Diamond Bend."
+                  title="Driving through Blue Diamond Bend."
                   loading="lazy"
                   width="1920px"
                   height="auto"
                 />
-                <h3>Death Valley National Park</h3>
+                <h3>Blue Diamond Bend</h3>
               </div>
             </PlacesToVisit>
-            {/* <h3>Blue Diamond Bend</h3>
-            <h3>Valley of Fire State Park</h3>
+            {/* <h3></h3>
+            <h3></h3>
             <h3></h3> */}
-            <Button>See more locations near Vegas</Button>
           </div>
         </section>
+        <Button>Call to Reserve Your Car Today!</Button>
         <section>
           <div className="medium-container">
             <h2>Upcoming Event in Las Vegas</h2>
@@ -212,9 +211,9 @@ export default function Home() {
             <h3>CES 2024 Las Vegas</h3>
             <h3>SHOT Show 2024 Las Vegas</h3>
             <h3>World of Concrete 2024 Las Vegas</h3>
-            <Button>See more events in Vegas</Button>
           </div>
         </section>
+        <Button>See more events in Vegas</Button>
         <section>
           <div className="medium-container">
             <Why>
@@ -267,10 +266,9 @@ export default function Home() {
                 </div>
               </div>
             </Why>
-            <Button>Call today to reserve your McLaren!</Button>
           </div>
         </section>
-
+        <Button>Call today to reserve your McLaren!</Button>
         <section>
           <div className="container">
             <h2>About Us</h2>
@@ -301,9 +299,9 @@ export default function Home() {
               memories filled with the roar of powerful engines, the thrill of
               speed, and the luxury of the world’s finest automobiles.
             </p>
-            <Button>Call today to reserve your McLaren!</Button>
           </div>
         </section>
+        <Button>Call us to reserve your McLaren Today!</Button>
         <section>
           <div className="medium-container">
             <h2>Frequently Asked Questions</h2>
@@ -387,7 +385,7 @@ export default function Home() {
         </section>
         <BaseImage>
           <div className="btn">
-            <Button>Call to Reserve Your McLaren Today!</Button>
+            <WhiteButton>Call to Reserve Your McLaren Today!</WhiteButton>
           </div>
         </BaseImage>
       </main>
@@ -432,6 +430,9 @@ const Car = styled.div`
 `
 
 const Faq = styled.div`
+  h3 {
+    margin-top: 2rem;
+  }
   @media screen and (min-width: 900px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -478,4 +479,10 @@ const PlacesToVisit = styled.div`
       text-align: center;
     }
   }
+`
+
+const WhiteButton = styled(Button)`
+  color: #fff;
+  border-color: #fff;
+  text-shadow: 1px 2px #000;
 `
