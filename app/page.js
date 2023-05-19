@@ -49,11 +49,10 @@ export default function Home() {
                 </p>
               </div>
             </Intro>
+            <Button>Call to Reserve Your McLaren Today!</Button>
           </div>
         </section>
-        <div className="btn">
-          <Button>Call to Reserve Your McLaren Today!</Button>
-        </div>
+
         <section>
           <div className="medium-container">
             <h2>Our McLaren Vehicles</h2>
@@ -74,8 +73,8 @@ export default function Home() {
                   experience, with a touch of grand tourer luxury.
                 </p>
                 <div className="car-btns">
-                  <Button>Reserve Now!</Button>
-                  <Button>Learn More!</Button>
+                  <SmallButton>Reserve Now!</SmallButton>
+                  <SmallButton>Learn More!</SmallButton>
                 </div>
               </Car>
               <Car>
@@ -95,8 +94,8 @@ export default function Home() {
                   performance, sophisticated design, and advanced technology.
                 </p>
                 <div className="car-btns">
-                  <Button>Reserve Now!</Button>
-                  <Button>Learn More!</Button>
+                  <SmallButton>Reserve Now!</SmallButton>
+                  <SmallButton>Learn More!</SmallButton>
                 </div>
               </Car>
             </CarsForRent>
@@ -108,11 +107,10 @@ export default function Home() {
               equipped with state-of-the-art technology, allowing you to
               experience the full potential of these engineering marvels.
             </p>
+            <Button>Call to Reserve Your McLaren Today!</Button>
           </div>
         </section>
-        <div className="btn">
-          <Button>Call to Reserve Your McLaren Today!</Button>
-        </div>
+
         <section>
           <div className="medium-container">
             <h2>Take a Scenic Drive Near Las Vegas in a McLaren</h2>
@@ -197,12 +195,10 @@ export default function Home() {
                 <h3>Blue Diamond Bend</h3>
               </div>
             </PlacesToVisit>
-            {/* <h3></h3>
-            <h3></h3>
-            <h3></h3> */}
+            <Button>Call to Reserve Your Car Today!</Button>
           </div>
         </section>
-        <Button>Call to Reserve Your Car Today!</Button>
+
         <section>
           <div className="medium-container">
             <h2>Upcoming Event in Las Vegas</h2>
@@ -211,9 +207,10 @@ export default function Home() {
             <h3>CES 2024 Las Vegas</h3>
             <h3>SHOT Show 2024 Las Vegas</h3>
             <h3>World of Concrete 2024 Las Vegas</h3>
+            <Button>See more events in Vegas</Button>
           </div>
         </section>
-        <Button>See more events in Vegas</Button>
+
         <section>
           <div className="medium-container">
             <Why>
@@ -266,9 +263,10 @@ export default function Home() {
                 </div>
               </div>
             </Why>
+            <Button>Call today to reserve your McLaren!</Button>
           </div>
         </section>
-        <Button>Call today to reserve your McLaren!</Button>
+
         <section>
           <div className="container">
             <h2>About Us</h2>
@@ -299,9 +297,9 @@ export default function Home() {
               memories filled with the roar of powerful engines, the thrill of
               speed, and the luxury of the world’s finest automobiles.
             </p>
+            <Button>Call us to reserve your McLaren Today!</Button>
           </div>
         </section>
-        <Button>Call us to reserve your McLaren Today!</Button>
         <section>
           <div className="medium-container">
             <h2>Frequently Asked Questions</h2>
@@ -485,4 +483,8 @@ const WhiteButton = styled(Button)`
   color: #fff;
   border-color: #fff;
   text-shadow: 1px 2px #000;
+`
+
+const SmallButton = styled(Button)`
+  font-size: 1rem;
 `
