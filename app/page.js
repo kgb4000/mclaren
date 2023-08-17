@@ -54,8 +54,8 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="medium-container">
-            <h2>Our McLaren Vehicles</h2>
+          <div className="container">
+            <h2>Rent A McLaren For A Day</h2>
             <CarsForRent>
               <Car>
                 <h3>McLaren 570GT - Elegance Meets Power</h3>
@@ -113,9 +113,9 @@ export default function Home() {
 
         <section>
           <div className="medium-container">
-            <h2>Take a Scenic Drive Near Las Vegas in a McLaren</h2>
+            <h2>Rent a McLaren and Take a Scenic Drive Near Las Vegas</h2>
             <p className="center">
-              Don't just rent your supercar and cruse the{' '}
+              Don't just rent your supercar to cruse the{' '}
               <a
                 href="https://www.lasvegashowto.com/las-vegas-strip-map"
                 target="_blank"
@@ -200,7 +200,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="medium-container">
+          <div className="container">
             <h2>Upcoming Event in Las Vegas</h2>
             <h3>NAHB International Builders' Show 2024 Las Vegas</h3>
             <h3>Allegiant Stadium - Las Vegas Raiders</h3>
@@ -268,7 +268,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="container">
+          <div className="small-container">
             <h2>About Us</h2>
             <p>
               Supercar Rentals Las Vegas is your premier destination for
@@ -301,10 +301,15 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="medium-container">
+          <div className="container">
             <h2>Frequently Asked Questions</h2>
             <Faq>
               <div className="faq-section">
+                <h3>How much is it to rent a McLaren for a day?</h3>
+                <p>
+                  To rent a McLaren, it will cost $649.00 for the McLaren 570GT
+                  and for the McLaren 570S.
+                </p>
                 <h3>Who can rent a McLaren?</h3>
                 <p>
                   Any licensed driver aged 25 or older with full-coverage auto

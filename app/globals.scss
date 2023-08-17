@@ -47,7 +47,12 @@ header {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1140px;
+  padding: 0 1.2rem;
+  margin: 0 auto;
+}
+.small-container {
+  max-width: 760px;
   padding: 0 1.2rem;
   margin: 0 auto;
 }
