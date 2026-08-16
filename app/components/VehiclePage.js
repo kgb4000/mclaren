@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Button from './Button'
 import { PHONE_NUMBER, PHONE_HREF } from '../../lib/constants'
 
@@ -68,7 +69,9 @@ export default function VehiclePage({
                 </Button>
               </div>
               <p>
-                <a href="/rental-requirements">View rental requirements</a>
+                <Link href="/rental-requirements">
+                  View rental requirements
+                </Link>
               </p>
             </div>
           </div>

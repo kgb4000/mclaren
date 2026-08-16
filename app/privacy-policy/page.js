@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const title = 'Privacy Policy'
 const description =
   'Privacy Policy for McLaren Rentals Las Vegas — how we collect, use, and share your information.'
@@ -148,8 +150,8 @@ export default function PrivacyPolicyPage() {
           <h2 className="text-left">Contact Us</h2>
           <p>
             Questions about this Privacy Policy? See our{' '}
-            <a href="/contact">Contact page</a> for our phone number and
-            location.
+            <Link href="/contact">Contact page</Link> for our phone number
+            and location.
           </p>
         </div>
       </section>

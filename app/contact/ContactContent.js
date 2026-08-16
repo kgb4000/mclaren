@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from '../components/Button'
 import { PHONE_NUMBER, PHONE_HREF } from '../../lib/constants'
 
@@ -32,8 +33,9 @@ export default function ContactContent() {
             </p>
           </div>
           <p>
-            Check our <a href="/rental-requirements">rental requirements</a>{' '}
-            or <a href="/#faq">FAQ</a> before you call.
+            Check our{' '}
+            <Link href="/rental-requirements">rental requirements</Link> or{' '}
+            <Link href="/#faq">FAQ</Link> before you call.
           </p>
           <Button href={PHONE_HREF}>Call {PHONE_NUMBER}</Button>
         </div>

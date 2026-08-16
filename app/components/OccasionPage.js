@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from './Button'
 import FaqAccordion from './FaqAccordion'
 import { PHONE_NUMBER, PHONE_HREF } from '../../lib/constants'
@@ -35,8 +36,8 @@ export default function OccasionPage({
           )}
           <p>
             Ready to book? Check our{' '}
-            <a href="/rental-requirements">rental requirements</a> or give us
-            a call.
+            <Link href="/rental-requirements">rental requirements</Link> or
+            give us a call.
           </p>
           <Button href={PHONE_HREF}>
             {ctaText || `Call ${PHONE_NUMBER} to Reserve Your McLaren`}

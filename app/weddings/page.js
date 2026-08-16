@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import OccasionPage from '../components/OccasionPage'
 import { PHONE_NUMBER } from '../../lib/constants'
 
@@ -23,8 +24,9 @@ const points = [
     title: 'Two Show-Stopping Models',
     body: (
       <>
-        The elegant McLaren <a href="/mclaren-570gt">570GT</a> or the sharper{' '}
-        <a href="/mclaren-570s">570S</a> — both $699.00 per day.
+        The elegant McLaren <Link href="/mclaren-570gt">570GT</Link> or the
+        sharper <Link href="/mclaren-570s">570S</Link> — both $699.00 per
+        day.
       </>
     ),
   },

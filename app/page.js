@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import HeroSection from './components/HeroSection'
 import Button from './components/Button'
 import FaqAccordion from './components/FaqAccordion'
@@ -220,8 +221,8 @@ const FAQS_COL_1 = [
     answer: (
       <>
         Renting a McLaren costs $699.00 per day for either the{' '}
-        <a href="/mclaren-570gt">570GT</a> or the{' '}
-        <a href="/mclaren-570s">570S</a>.
+        <Link href="/mclaren-570gt">570GT</Link> or the{' '}
+        <Link href="/mclaren-570s">570S</Link>.
       </>
     ),
   },
@@ -231,7 +232,7 @@ const FAQS_COL_1 = [
       <>
         Any licensed driver aged 25 or older can rent a McLaren from us — no
         personal auto insurance required. See our{' '}
-        <a href="/rental-requirements">full rental requirements</a> for
+        <Link href="/rental-requirements">full rental requirements</Link> for
         details.
       </>
     ),
@@ -241,8 +242,9 @@ const FAQS_COL_1 = [
     answer: (
       <>
         Yes, international visitors are welcome to rent, provided you meet
-        our age and license requirements. <a href="/contact">Contact us</a>{' '}
-        to confirm we can accept your driver's license before you book.
+        our age and license requirements.{' '}
+        <Link href="/contact">Contact us</Link> to confirm we can accept your
+        driver's license before you book.
       </>
     ),
   },
@@ -254,7 +256,8 @@ const FAQS_COL_1 = [
         $699.00/day rate. If you'd like additional coverage, we offer an
         optional McLaren protection package for $499.00/day (100k
         supplemental liability, $5,000 deductible) — see our{' '}
-        <a href="/rental-requirements">rental requirements</a> for details.
+        <Link href="/rental-requirements">rental requirements</Link> for
+        details.
       </>
     ),
   },
@@ -270,9 +273,9 @@ const FAQS_COL_1 = [
         Yes, you are free to drive anywhere within the continental United
         States. Each rental day includes a 100-mile allowance, with a $7.50
         per-mile fee beyond that — see our{' '}
-        <a href="/drives-in-las-vegas">
+        <Link href="/drives-in-las-vegas">
           guide to McLaren drives in Las Vegas
-        </a>{' '}
+        </Link>{' '}
         for routes that fit within it.
       </>
     ),
@@ -283,8 +286,8 @@ const FAQS_COL_1 = [
       <>
         In the unfortunate event of damage, you will be responsible for the
         deductible on your insurance policy. See our{' '}
-        <a href="/rental-requirements">rental requirements</a> for details on
-        our optional protection package.
+        <Link href="/rental-requirements">rental requirements</Link> for
+        details on our optional protection package.
       </>
     ),
   },
@@ -292,9 +295,9 @@ const FAQS_COL_1 = [
     question: 'Can I extend my rental period?',
     answer: (
       <>
-        Yes, subject to availability. Please <a href="/contact">contact us</a>{' '}
-        at least 24 hours before your rental period ends if you wish to
-        extend.
+        Yes, subject to availability. Please{' '}
+        <Link href="/contact">contact us</Link> at least 24 hours before your
+        rental period ends if you wish to extend.
       </>
     ),
   },
@@ -303,7 +306,8 @@ const FAQS_COL_1 = [
     answer: (
       <>
         We're open 24 hours a day, seven days a week. See our{' '}
-        <a href="/contact">contact page</a> for phone and location details.
+        <Link href="/contact">contact page</Link> for phone and location
+        details.
       </>
     ),
   },
@@ -315,9 +319,9 @@ const FAQS_COL_2 = [
     answer: (
       <>
         Yes, additional drivers are allowed but they must meet the{' '}
-        <a href="/rental-requirements">
+        <Link href="/rental-requirements">
           same requirements as the main driver
-        </a>
+        </Link>
         , including age, driving license, and insurance coverage. Please note
         that additional charges may apply.
       </>
@@ -333,8 +337,8 @@ const FAQS_COL_2 = [
     answer: (
       <>
         Yes, we do. We offer delivery and pick-up services within Las Vegas.
-        Please <a href="/contact">contact us</a> for further details and any
-        additional fees.
+        Please <Link href="/contact">contact us</Link> for further details
+        and any additional fees.
       </>
     ),
   },
@@ -342,8 +346,8 @@ const FAQS_COL_2 = [
     question: 'Can I cancel or modify my reservation?',
     answer: (
       <>
-        Yes, you can <a href="/contact">contact us</a> to cancel or modify
-        your reservation. However, please note that cancellations or
+        Yes, you can <Link href="/contact">contact us</Link> to cancel or
+        modify your reservation. However, please note that cancellations or
         modifications must be made at least 48 hours before the scheduled
         rental time to avoid any charges.
       </>
@@ -361,7 +365,8 @@ const FAQS_COL_2 = [
         Our optional tire protection package doesn't cover damage from
         burnouts, donuts, or track use, so any tire wear from that kind of
         driving is your responsibility. If you're planning a track day,{' '}
-        <a href="/contact">call us first</a> to talk through your options.
+        <Link href="/contact">call us first</Link> to talk through your
+        options.
       </>
     ),
   },
@@ -455,12 +460,12 @@ export default function Home() {
             <div className="flex flex-wrap md:grid md:grid-cols-2 md:gap-10">
               <div className="mb-8 flex flex-col">
                 <h3 className="text-center">
-                  <a
+                  <Link
                     href="/mclaren-570gt"
                     className="text-inherit hover:text-gold-dark"
                   >
                     McLaren 570GT - Elegance Meets Power
-                  </a>
+                  </Link>
                 </h3>
                 <Image
                   src="/images/mclaren-570GT.webp"
@@ -487,12 +492,12 @@ export default function Home() {
               </div>
               <div className="mb-8 flex flex-col">
                 <h3 className="text-center">
-                  <a
+                  <Link
                     href="/mclaren-570s"
                     className="text-inherit hover:text-gold-dark"
                   >
                     McLaren 570S - Sportiness Redefined
-                  </a>
+                  </Link>
                 </h3>
                 <Image
                   src="/images/mclaren-570S.webp"
@@ -526,20 +531,20 @@ export default function Home() {
                   <tr>
                     <th>Spec</th>
                     <th>
-                      <a
+                      <Link
                         href="/mclaren-570gt"
                         className="text-inherit underline hover:text-gold-dark"
                       >
                         570GT
-                      </a>
+                      </Link>
                     </th>
                     <th>
-                      <a
+                      <Link
                         href="/mclaren-570s"
                         className="text-inherit underline hover:text-gold-dark"
                       >
                         570S
-                      </a>
+                      </Link>
                     </th>
                   </tr>
                 </thead>
@@ -589,7 +594,7 @@ export default function Home() {
             </p>
             <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
               {OCCASIONS.map((occasion) => (
-                <a
+                <Link
                   key={occasion.title}
                   href={occasion.href}
                   className="flex h-full flex-col border border-[#333] p-6 text-inherit hover:border-gold"
@@ -603,7 +608,7 @@ export default function Home() {
                   <p className="mb-0 text-[0.85rem] text-[#666]">
                     Suggested: <strong>{occasion.suggested}</strong>
                   </p>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -702,9 +707,9 @@ export default function Home() {
             </div>
             <p className="text-center">
               See our full guide to{' '}
-              <a href="/drives-in-las-vegas">
+              <Link href="/drives-in-las-vegas">
                 McLaren drives in Las Vegas
-              </a>
+              </Link>
               , with distances and drive times for each route.
             </p>
           </div>

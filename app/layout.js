@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import MobileCtaBar from './components/MobileCtaBar'
 
-const title = 'Rent a McLaren in Las Vegas | McLaren Rentals'
+const title = 'Rent a McLaren in Las Vegas | McLaren Rentals From $699'
 const description =
   'Rent a McLaren 570GT or 570S in Las Vegas — no personal insurance required. Your unforgettable driving experience is just a call away.'
 

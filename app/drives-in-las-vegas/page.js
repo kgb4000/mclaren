@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from '../components/Button'
 import { PHONE_HREF } from '../../lib/constants'
 
@@ -146,12 +147,12 @@ export default function DrivesInLasVegasPage() {
                 <ul className="mt-0 mb-3 list-disc pl-5">
                   <li>
                     Best car:{' '}
-                    <a
+                    <Link
                       href={drive.bestCarHref}
                       className="text-inherit underline hover:text-gold-dark"
                     >
                       McLaren {drive.bestCar}
-                    </a>
+                    </Link>
                   </li>
                   {drive.features.map((feature) => (
                     <li key={feature}>{feature}</li>
@@ -196,12 +197,12 @@ export default function DrivesInLasVegasPage() {
                     <td>{drive.name}</td>
                     <td>{drive.distance}</td>
                     <td>
-                      <a
+                      <Link
                         href={drive.bestCarHref}
                         className="text-inherit underline hover:text-gold-dark"
                       >
                         {drive.bestCar}
-                      </a>
+                      </Link>
                     </td>
                     <td>{drive.whoFor[0]}</td>
                     <td>{drive.parkFee}</td>
@@ -214,7 +215,7 @@ export default function DrivesInLasVegasPage() {
           <p className="mt-8 text-center">
             Red Rock Canyon, Hoover Dam, Mount Charleston, and Blue Diamond
             all fit comfortably within your{' '}
-            <a href="/rental-requirements">100-mile daily allowance</a>.
+            <Link href="/rental-requirements">100-mile daily allowance</Link>.
             Valley of Fire and Death Valley run over it round trip — see the
             notes above for the extra mileage cost. Ready to pick a route?
           </p>

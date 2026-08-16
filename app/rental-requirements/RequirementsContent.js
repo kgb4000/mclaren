@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from '../components/Button'
 import FaqAccordion from '../components/FaqAccordion'
 import { PHONE_NUMBER, PHONE_HREF } from '../../lib/constants'
@@ -14,7 +15,7 @@ const faqs = [
       <>
         Yes — international visitors are welcome to rent, provided you meet
         the age and license requirements above.{' '}
-        <a href="/contact">Contact us</a> to confirm we can accept your
+        <Link href="/contact">Contact us</Link> to confirm we can accept your
         driver's license before you book.
       </>
     ),
@@ -31,7 +32,8 @@ const faqs = [
         Our optional tire protection package doesn't cover damage from
         burnouts, donuts, or track use, so any tire wear from that kind of
         driving is your responsibility. If you're planning a track day,{' '}
-        <a href="/contact">call us first</a> to talk through your options.
+        <Link href="/contact">call us first</Link> to talk through your
+        options.
       </>
     ),
   },
@@ -46,8 +48,9 @@ export default function RequirementsContent() {
             McLaren Rental Requirements
           </h1>
           <p>
-            Before you reserve a McLaren <a href="/mclaren-570gt">570GT</a>{' '}
-            or <a href="/mclaren-570s">570S</a> with us, here's everything
+            Before you reserve a McLaren{' '}
+            <Link href="/mclaren-570gt">570GT</Link> or{' '}
+            <Link href="/mclaren-570s">570S</Link> with us, here's everything
             you need to know to make sure you're ready to drive.
           </p>
           <div className="my-8 [&_h3]:mt-8">
@@ -96,7 +99,8 @@ export default function RequirementsContent() {
           <FaqAccordion faqs={faqs} />
           <p>
             Have more questions? Check our{' '}
-            <a href="/#faq">Frequently Asked Questions</a> or give us a call.
+            <Link href="/#faq">Frequently Asked Questions</Link> or give us a
+            call.
           </p>
           <Button href={PHONE_HREF}>
             Call {PHONE_NUMBER} to Reserve Your McLaren

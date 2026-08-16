@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Button from '../components/Button'
 import FaqAccordion from '../components/FaqAccordion'
 import { PHONE_NUMBER, PHONE_HREF } from '../../lib/constants'
@@ -28,8 +29,8 @@ const faqs = [
         overage ($7.50/mile beyond the included 100), the optional
         $499.00/day protection package if you choose it, state and local
         taxes, and a 3% card processing fee. See our{' '}
-        <a href="/rental-requirements">rental requirements</a> for the full
-        policy.
+        <Link href="/rental-requirements">rental requirements</Link> for the
+        full policy.
       </>
     ),
   },
@@ -49,7 +50,7 @@ const faqs = [
     answer: (
       <>
         The pricing on this page is our standard daily rate.{' '}
-        <a href="/contact">Call us</a> to confirm current pricing and
+        <Link href="/contact">Call us</Link> to confirm current pricing and
         availability if you're booking around a major convention or event
         weekend.
       </>
@@ -66,9 +67,10 @@ export default function PricingPage() {
             McLaren Rental Pricing in Las Vegas
           </h1>
           <p>
-            Both the McLaren <a href="/mclaren-570gt">570GT</a> and{' '}
-            <a href="/mclaren-570s">570S</a> rent for the same flat rate.
-            Here's the full cost breakdown — no hidden tiers, no surprises.
+            Both the McLaren <Link href="/mclaren-570gt">570GT</Link> and{' '}
+            <Link href="/mclaren-570s">570S</Link> rent for the same flat
+            rate. Here's the full cost breakdown — no hidden tiers, no
+            surprises.
           </p>
 
           <div className="overflow-x-auto">
@@ -114,8 +116,8 @@ export default function PricingPage() {
 
           <p>
             No personal auto insurance is required to rent. See our{' '}
-            <a href="/rental-requirements">rental requirements</a> for the
-            full policy on age, license, insurance, and deposit.
+            <Link href="/rental-requirements">rental requirements</Link> for
+            the full policy on age, license, insurance, and deposit.
           </p>
 
           <div className="my-6 flex flex-wrap justify-center gap-4">
@@ -141,8 +143,8 @@ export default function PricingPage() {
           <FaqAccordion faqs={faqs} />
 
           <p className="mt-8">
-            Questions about pricing? <a href="/contact">Contact us</a> or
-            give us a call.
+            Questions about pricing? <Link href="/contact">Contact us</Link>{' '}
+            or give us a call.
           </p>
           <Button href={PHONE_HREF}>
             Call {PHONE_NUMBER} to Reserve Your McLaren

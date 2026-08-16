@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import OccasionPage from '../components/OccasionPage'
 import { PHONE_NUMBER } from '../../lib/constants'
 
@@ -23,8 +24,8 @@ const points = [
     title: 'Two Production-Ready Models',
     body: (
       <>
-        The <a href="/mclaren-570gt">570GT</a> and{' '}
-        <a href="/mclaren-570s">570S</a>, both $699.00 per day.
+        The <Link href="/mclaren-570gt">570GT</Link> and{' '}
+        <Link href="/mclaren-570s">570S</Link>, both $699.00 per day.
       </>
     ),
   },
@@ -41,7 +42,9 @@ const points = [
     body: (
       <>
         See our{' '}
-        <a href="/drives-in-las-vegas">guide to McLaren drives in Las Vegas</a>{' '}
+        <Link href="/drives-in-las-vegas">
+          guide to McLaren drives in Las Vegas
+        </Link>{' '}
         for scenic filming locations within a short drive of the Strip.
       </>
     ),

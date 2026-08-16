@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import OccasionPage from '../components/OccasionPage'
 import { PHONE_NUMBER } from '../../lib/constants'
 
@@ -23,9 +24,9 @@ const points = [
     title: 'Client-Ready Fleet',
     body: (
       <>
-        The McLaren <a href="/mclaren-570gt">570GT</a> and{' '}
-        <a href="/mclaren-570s">570S</a>, both $699.00 per day, detailed and
-        ready before pickup.
+        The McLaren <Link href="/mclaren-570gt">570GT</Link> and{' '}
+        <Link href="/mclaren-570s">570S</Link>, both $699.00 per day,
+        detailed and ready before pickup.
       </>
     ),
   },
@@ -41,8 +42,8 @@ const points = [
     title: 'Built for the Convention Calendar',
     body: (
       <>
-        Check our <a href="/#events">upcoming events</a> for this year's
-        major Las Vegas trade shows.
+        Check our <Link href="/#events">upcoming events</Link> for this
+        year's major Las Vegas trade shows.
       </>
     ),
   },
@@ -65,7 +66,8 @@ const faqs = [
       <>
         Our McLarens are self-drive rentals — a licensed member of your team,
         25 or older, must be behind the wheel. See our{' '}
-        <a href="/rental-requirements">rental requirements</a> for details.
+        <Link href="/rental-requirements">rental requirements</Link> for
+        details.
       </>
     ),
   },
@@ -82,8 +84,8 @@ const faqs = [
       <>
         Yes, we offer delivery and pick-up within Las Vegas, including
         convention centers and event venues.{' '}
-        <a href="/contact">Contact us</a> to arrange logistics around your
-        event schedule.
+        <Link href="/contact">Contact us</Link> to arrange logistics around
+        your event schedule.
       </>
     ),
   },

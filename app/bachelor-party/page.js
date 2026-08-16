@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import OccasionPage from '../components/OccasionPage'
 import { PHONE_NUMBER } from '../../lib/constants'
 
@@ -17,8 +18,9 @@ const intro = [
   <>
     A Las Vegas bachelor party deserves an entrance to match. Rolling up to
     the club, the pool party, or dinner in a McLaren{' '}
-    <a href="/mclaren-570s">570S</a> or <a href="/mclaren-570gt">570GT</a>{' '}
-    turns heads before you even step out.
+    <Link href="/mclaren-570s">570S</Link> or{' '}
+    <Link href="/mclaren-570gt">570GT</Link> turns heads before you even step
+    out.
   </>,
   'Split between the group, a McLaren rental is one of the most memorable ways to mark the last ride of freedom.',
 ]
@@ -54,7 +56,8 @@ const faqs = [
       <>
         Yes. Every driver on the rental, including additional drivers, must
         be 25 or older with a valid license — see our{' '}
-        <a href="/rental-requirements">rental requirements</a> for details.
+        <Link href="/rental-requirements">rental requirements</Link> for
+        details.
       </>
     ),
   },
@@ -63,7 +66,7 @@ const faqs = [
     answer: (
       <>
         Yes, we offer delivery and pick-up services within Las Vegas.{' '}
-        <a href="/contact">Contact us</a> to arrange pickup around your
+        <Link href="/contact">Contact us</Link> to arrange pickup around your
         itinerary.
       </>
     ),

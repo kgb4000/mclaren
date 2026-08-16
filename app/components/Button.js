@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { twMerge } from 'tailwind-merge'
 
 const BASE =
@@ -7,6 +8,14 @@ export default function Button({ href, className = '', children, ...props }) {
   const classes = twMerge(BASE, className)
 
   if (href) {
+    if (href.startsWith('/')) {
+      return (
+        <Link href={href} className={classes} {...props}>
+          {children}
+        </Link>
+      )
+    }
+
     return (
       <a href={href} className={classes} {...props}>
         {children}

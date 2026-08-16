@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { PHONE_HREF } from '../../lib/constants'
 
 const linkClasses =
@@ -21,7 +22,7 @@ export default function MobileCtaBar() {
         </svg>
         Call Now
       </a>
-      <a
+      <Link
         href="/#fleet"
         className={`${linkClasses} border border-[#444] bg-transparent text-white`}
       >
@@ -39,7 +40,7 @@ export default function MobileCtaBar() {
           <path d="M3.5 9.5h17M8 3v4M16 3v4" />
         </svg>
         Book Now
-      </a>
+      </Link>
     </div>
   )
 }
