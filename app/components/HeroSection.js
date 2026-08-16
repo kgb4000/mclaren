@@ -17,7 +17,7 @@ const HeroSection = ({
       }}
     >
       <div className="max-w-[80%] text-center font-bold">
-        <h1 className="mt-8 mb-4 text-[2.5rem] font-black text-white [text-shadow:2px_4px_#000] md:text-[6rem]">
+        <h1 className="mt-8 mb-4 text-[2rem] font-black text-white [text-shadow:2px_4px_#000] md:text-[6rem]">
           {heroText}
         </h1>
         <p className="text-[1.4rem] leading-[1.6] font-light text-white [text-shadow:1px_2px_#000] md:text-[1.6rem] md:leading-[1.4] md:font-semibold">
