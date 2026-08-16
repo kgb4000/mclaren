@@ -2,7 +2,7 @@ import Link from 'next/link'
 import OccasionPage from '../components/OccasionPage'
 import { PHONE_NUMBER } from '../../lib/constants'
 
-const title = 'McLaren Rental for Music Videos & Film in Las Vegas'
+const title = 'McLaren Rental for Music Videos & Film'
 const description =
   'Rent a McLaren for a Las Vegas music video, film, or commercial shoot. $699/day, flexible scheduling.'
 

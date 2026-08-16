@@ -2,7 +2,7 @@ import Link from 'next/link'
 import OccasionPage from '../components/OccasionPage'
 import { PHONE_NUMBER } from '../../lib/constants'
 
-const title = 'Wedding & Proposal McLaren Rental in Las Vegas'
+const title = 'McLaren Rental for Weddings in Las Vegas'
 const description =
   'Rent a McLaren for your Las Vegas wedding, proposal, or anniversary. Flexible pickup and drop-off, $699/day, no personal insurance required.'
 
