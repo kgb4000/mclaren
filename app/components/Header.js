@@ -36,7 +36,7 @@ export default function Header() {
         <nav
           className={`${
             menuOpen ? 'flex' : 'hidden'
-          } absolute left-0 right-0 top-full flex-col bg-black pb-8 pl-[1.2rem] pr-[1.2rem] pt-4 md:static md:flex md:flex-row md:items-center md:gap-6 md:bg-transparent md:p-0`}
+          } absolute left-0 right-0 top-full max-h-[calc(100vh-4.5rem)] flex-col overflow-y-auto bg-black pb-8 pl-[1.2rem] pr-[1.2rem] pt-4 md:static md:flex md:max-h-none md:flex-row md:items-center md:gap-6 md:overflow-visible md:bg-transparent md:p-0`}
         >
           <a href="/" className={navLinkClasses} onClick={close}>
             Home
