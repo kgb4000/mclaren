@@ -1,6 +1,6 @@
 import VehiclePage from '../components/VehiclePage'
 
-const title = 'McLaren 570GT Rental in Las Vegas'
+const title = 'McLaren 570GT Rental in Las Vegas $699/Day'
 const description =
   'Rent a McLaren 570GT in Las Vegas for $699.00/day. Check real-time availability and reserve online.'
 
