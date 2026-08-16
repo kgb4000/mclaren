@@ -582,6 +582,24 @@ export default function Home() {
                 </tbody>
               </table>
             </div>
+            <div className="mt-8 flex flex-wrap justify-center">
+              <Button
+                href="https://lanier-luxury-rentals.fleetwire.io/rental/reservations?l_id=l_9QSAMXD6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={smallButtonClasses}
+              >
+                Book 570GT
+              </Button>
+              <Button
+                href="https://lanier-luxury-rentals.fleetwire.io/rental/reservations?l_id=l_8S33E5DN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={smallButtonClasses}
+              >
+                Book 570S
+              </Button>
+            </div>
           </div>
         </section>
 
