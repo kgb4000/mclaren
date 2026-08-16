@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.4.2",
+    "@parcel/watcher": "^2.6.0",
+    "next": "^16.3.1",
     "next-seo": "^6.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^6.0.0-rc.1"
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "postcss": "^8.5.26",
     "prettier": "2.8.8",
-    "sass": "^1.62.1"
+    "tailwindcss": "^4.3.3"
   }
 }

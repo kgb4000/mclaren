@@ -1,8 +1,48 @@
-<!-- public/sitemap.xml -->
-   <xml version="1.0" encoding="UTF-8">
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     <url>
-       <loc>http://rentamclarenlasvegas.com</loc>
-     </url>
-   </urlset>
-   </xml>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://rentamclarenlasvegas.com/</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/privacy-policy</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/pricing</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/rental-requirements</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/mclaren-570gt</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/mclaren-570s</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/bachelor-party</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/weddings</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/corporate-events</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/content-creators</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/anniversary-date-night</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/music-video-film</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/contact</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/drives-in-las-vegas</loc>
+  </url>
+  <url>
+    <loc>https://rentamclarenlasvegas.com/llms.txt</loc>
+  </url>
+</urlset>

@@ -1,25 +1,22 @@
-import styled from 'styled-components'
+import { twMerge } from 'tailwind-merge'
 
-const Button = styled.button`
-  border: 3px solid #f4b755;
-  background-color: transparent;
-  color: #f4b755;
-  font-weight: 600;
-  font-size: 1.2rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-  padding: 1rem 1.2rem;
+const BASE =
+  'block w-fit max-w-full mx-auto my-8 text-center border-[3px] border-gold bg-transparent px-[1.2rem] py-4 text-[1.2rem] font-semibold uppercase text-gold transition-colors cursor-pointer hover:bg-gold hover:text-black md:px-10 md:py-6'
 
-  &:hover {
-    background-color: #f4b755;
-    color: #000;
+export default function Button({ href, className = '', children, ...props }) {
+  const classes = twMerge(BASE, className)
+
+  if (href) {
+    return (
+      <a href={href} className={classes} {...props}>
+        {children}
+      </a>
+    )
   }
 
-  @media screen and (min-width: 900px) {
-    font-size: 1.2rem;
-    padding: 1.5rem 2.5rem;
-  }
-`
-
-export default Button
+  return (
+    <button className={classes} {...props}>
+      {children}
+    </button>
+  )
+}
