@@ -1,4 +1,6 @@
+'use client'
 import Link from 'next/link'
+import posthog from 'posthog-js'
 import { PHONE_HREF } from '../../lib/constants'
 
 const linkClasses =
@@ -7,7 +9,15 @@ const linkClasses =
 export default function MobileCtaBar() {
   return (
     <div className="fixed right-0 bottom-0 left-0 z-200 flex justify-center gap-3 border-t border-[#222] bg-[#0a0a0a] pt-3 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom,0))] md:hidden">
-      <a href={PHONE_HREF} className={`${linkClasses} bg-gold text-black`}>
+      <a
+        href={PHONE_HREF}
+        className={`${linkClasses} bg-gold text-black`}
+        onClick={() =>
+          posthog.capture('call_button_clicked', {
+            location: 'mobile_cta_bar',
+          })
+        }
+      >
         <svg
           viewBox="0 0 24 24"
           width="20"
@@ -25,6 +35,12 @@ export default function MobileCtaBar() {
       <Link
         href="/#fleet"
         className={`${linkClasses} border border-[#444] bg-transparent text-white`}
+        onClick={() =>
+          posthog.capture('book_now_clicked', {
+            vehicle: 'unspecified',
+            location: 'mobile_cta_bar',
+          })
+        }
       >
         <svg
           viewBox="0 0 24 24"

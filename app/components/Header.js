@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import posthog from 'posthog-js'
 import { PHONE_NUMBER, PHONE_HREF } from '../../lib/constants'
 
 const navLinkClasses =
@@ -136,6 +137,9 @@ export default function Header() {
           <a
             href={PHONE_HREF}
             className="mt-2 inline-block border-2 border-gold px-4 py-[0.6rem] text-center text-gold hover:bg-gold hover:text-black md:mt-0"
+            onClick={() =>
+              posthog.capture('call_button_clicked', { location: 'header' })
+            }
           >
             Call {PHONE_NUMBER}
           </a>

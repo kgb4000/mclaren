@@ -35,6 +35,7 @@ export default function McLaren570GTPage() {
       ]}
       specs={specs}
       checkAvailabilityUrl="https://lanier-luxury-rentals.fleetwire.io/rental/reservations?l_id=l_9QSAMXD6"
+      vehicleName="570GT"
     />
   )
 }

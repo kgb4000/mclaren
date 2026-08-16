@@ -72,6 +72,7 @@ export default function MusicVideoFilmPage() {
       points={points}
       faqs={faqs}
       ctaText={`Call ${PHONE_NUMBER} to Book Your Production`}
+      trackingId="music_video_film"
     />
   )
 }

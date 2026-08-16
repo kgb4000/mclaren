@@ -15,6 +15,7 @@ export default function VehiclePage({
   description,
   specs,
   checkAvailabilityUrl,
+  vehicleName,
 }) {
   return (
     <main>
@@ -61,10 +62,22 @@ export default function VehiclePage({
                   target="_blank"
                   rel="noopener noreferrer"
                   className={ctaButtonClasses}
+                  posthogEvent="book_now_clicked"
+                  posthogProperties={{
+                    vehicle: vehicleName,
+                    location: `vehicle_page_${vehicleName}`,
+                  }}
                 >
                   Check Availability
                 </Button>
-                <Button href={PHONE_HREF} className={ctaButtonClasses}>
+                <Button
+                  href={PHONE_HREF}
+                  className={ctaButtonClasses}
+                  posthogEvent="call_button_clicked"
+                  posthogProperties={{
+                    location: `vehicle_page_${vehicleName}`,
+                  }}
+                >
                   Call {PHONE_NUMBER}
                 </Button>
               </div>

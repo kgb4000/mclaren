@@ -219,7 +219,13 @@ export default function DrivesInLasVegasPage() {
             Valley of Fire and Death Valley run over it round trip — see the
             notes above for the extra mileage cost. Ready to pick a route?
           </p>
-          <Button href={PHONE_HREF}>Call to Reserve Your McLaren</Button>
+          <Button
+            href={PHONE_HREF}
+            posthogEvent="call_button_clicked"
+            posthogProperties={{ location: 'drives_page' }}
+          >
+            Call to Reserve Your McLaren
+          </Button>
         </div>
       </section>
     </main>

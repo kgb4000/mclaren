@@ -51,6 +51,7 @@ export default function WeddingsPage() {
       intro={intro}
       points={points}
       ctaText={`Call ${PHONE_NUMBER} to Reserve Your Wedding or Proposal McLaren`}
+      trackingId="weddings"
     />
   )
 }

@@ -388,6 +388,8 @@ export default function Home() {
           backgroundHeight="100vh"
           buttonText="Call to Reserve"
           buttonLink={PHONE_HREF}
+          posthogEvent="call_button_clicked"
+          posthogProperties={{ location: 'hero' }}
         />
         <section>
           <div className="medium-container">
@@ -445,6 +447,11 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={smallButtonClasses}
+                posthogEvent="book_now_clicked"
+                posthogProperties={{
+                  vehicle: '570GT',
+                  location: 'homepage_fleet_top',
+                }}
               >
                 Book 570GT
               </Button>
@@ -453,6 +460,11 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={smallButtonClasses}
+                posthogEvent="book_now_clicked"
+                posthogProperties={{
+                  vehicle: '570S',
+                  location: 'homepage_fleet_top',
+                }}
               >
                 Book 570S
               </Button>
@@ -588,6 +600,11 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={smallButtonClasses}
+                posthogEvent="book_now_clicked"
+                posthogProperties={{
+                  vehicle: '570GT',
+                  location: 'homepage_fleet_compare',
+                }}
               >
                 Book 570GT
               </Button>
@@ -596,6 +613,11 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={smallButtonClasses}
+                posthogEvent="book_now_clicked"
+                posthogProperties={{
+                  vehicle: '570S',
+                  location: 'homepage_fleet_compare',
+                }}
               >
                 Book 570S
               </Button>

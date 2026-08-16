@@ -126,6 +126,8 @@ export default function PricingPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="mx-0 my-0 inline-block w-auto"
+              posthogEvent="book_now_clicked"
+              posthogProperties={{ vehicle: '570GT', location: 'pricing_page' }}
             >
               Check 570GT Availability
             </Button>
@@ -134,6 +136,8 @@ export default function PricingPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="mx-0 my-0 inline-block w-auto"
+              posthogEvent="book_now_clicked"
+              posthogProperties={{ vehicle: '570S', location: 'pricing_page' }}
             >
               Check 570S Availability
             </Button>
@@ -146,7 +150,11 @@ export default function PricingPage() {
             Questions about pricing? <Link href="/contact">Contact us</Link>{' '}
             or give us a call.
           </p>
-          <Button href={PHONE_HREF}>
+          <Button
+            href={PHONE_HREF}
+            posthogEvent="call_button_clicked"
+            posthogProperties={{ location: 'pricing_page' }}
+          >
             Call {PHONE_NUMBER} to Reserve Your McLaren
           </Button>
         </div>

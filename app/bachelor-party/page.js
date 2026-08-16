@@ -86,6 +86,7 @@ export default function BachelorPartyPage() {
       points={points}
       faqs={faqs}
       ctaText={`Call ${PHONE_NUMBER} to Book Your Bachelor Party McLaren`}
+      trackingId="bachelor_party"
     />
   )
 }

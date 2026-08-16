@@ -9,6 +9,7 @@ export default function OccasionPage({
   points,
   faqs,
   ctaText,
+  trackingId,
 }) {
   return (
     <main>
@@ -39,7 +40,11 @@ export default function OccasionPage({
             <Link href="/rental-requirements">rental requirements</Link> or
             give us a call.
           </p>
-          <Button href={PHONE_HREF}>
+          <Button
+            href={PHONE_HREF}
+            posthogEvent="call_button_clicked"
+            posthogProperties={{ location: `occasion_${trackingId}` }}
+          >
             {ctaText || `Call ${PHONE_NUMBER} to Reserve Your McLaren`}
           </Button>
         </div>

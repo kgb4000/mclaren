@@ -102,7 +102,11 @@ export default function RequirementsContent() {
             <Link href="/#faq">Frequently Asked Questions</Link> or give us a
             call.
           </p>
-          <Button href={PHONE_HREF}>
+          <Button
+            href={PHONE_HREF}
+            posthogEvent="call_button_clicked"
+            posthogProperties={{ location: 'rental_requirements_page' }}
+          >
             Call {PHONE_NUMBER} to Reserve Your McLaren
           </Button>
         </div>

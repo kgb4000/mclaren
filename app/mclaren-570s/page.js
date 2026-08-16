@@ -35,6 +35,7 @@ export default function McLaren570SPage() {
       ]}
       specs={specs}
       checkAvailabilityUrl="https://lanier-luxury-rentals.fleetwire.io/rental/reservations?l_id=l_8S33E5DN"
+      vehicleName="570S"
     />
   )
 }

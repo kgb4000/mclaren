@@ -73,6 +73,7 @@ export default function ContentCreatorsPage() {
       points={points}
       faqs={faqs}
       ctaText={`Call ${PHONE_NUMBER} to Book Your Shoot`}
+      trackingId="content_creators"
     />
   )
 }

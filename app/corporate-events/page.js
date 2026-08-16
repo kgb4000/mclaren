@@ -99,6 +99,7 @@ export default function CorporateEventsPage() {
       points={points}
       faqs={faqs}
       ctaText={`Call ${PHONE_NUMBER} to Reserve Your Corporate Event McLaren`}
+      trackingId="corporate_events"
     />
   )
 }

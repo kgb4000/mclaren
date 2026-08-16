@@ -1,4 +1,6 @@
+'use client'
 import Link from 'next/link'
+import posthog from 'posthog-js'
 import { PHONE_NUMBER, PHONE_HREF } from '../../lib/constants'
 
 const footerLinkClasses = 'text-white hover:text-gold'
@@ -9,7 +11,13 @@ export default function Footer() {
       <div className="container">
         <p className="m-0 text-[1.1rem] font-semibold">
           Call us at{' '}
-          <a href={PHONE_HREF} className="text-gold hover:underline">
+          <a
+            href={PHONE_HREF}
+            className="text-gold hover:underline"
+            onClick={() =>
+              posthog.capture('call_button_clicked', { location: 'footer' })
+            }
+          >
             {PHONE_NUMBER}
           </a>
         </p>

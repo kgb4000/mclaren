@@ -37,7 +37,13 @@ export default function ContactContent() {
             <Link href="/rental-requirements">rental requirements</Link> or{' '}
             <Link href="/#faq">FAQ</Link> before you call.
           </p>
-          <Button href={PHONE_HREF}>Call {PHONE_NUMBER}</Button>
+          <Button
+            href={PHONE_HREF}
+            posthogEvent="call_button_clicked"
+            posthogProperties={{ location: 'contact_page' }}
+          >
+            Call {PHONE_NUMBER}
+          </Button>
         </div>
       </section>
     </main>

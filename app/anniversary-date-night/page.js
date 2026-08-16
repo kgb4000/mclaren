@@ -59,6 +59,7 @@ export default function AnniversaryDateNightPage() {
       intro={intro}
       points={points}
       ctaText={`Call ${PHONE_NUMBER} to Reserve Your Date Night McLaren`}
+      trackingId="anniversary_date_night"
     />
   )
 }

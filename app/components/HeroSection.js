@@ -7,6 +7,8 @@ const HeroSection = ({
   buttonText,
   backgroundHeight,
   buttonLink,
+  posthogEvent,
+  posthogProperties,
 }) => {
   return (
     <span
@@ -27,6 +29,8 @@ const HeroSection = ({
           <Button
             href={buttonLink}
             className="border-white text-white hover:bg-white hover:text-black"
+            posthogEvent={posthogEvent}
+            posthogProperties={posthogProperties}
           >
             {buttonText}
           </Button>
