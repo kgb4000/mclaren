@@ -13,7 +13,12 @@ export async function middleware(request) {
   }
 
   const cookie = request.cookies.get('admin_session')?.value
-  const isValid = await verifySession(cookie)
+  let isValid = false
+  try {
+    isValid = await verifySession(cookie)
+  } catch {
+    isValid = false
+  }
 
   if (!isValid) {
     return NextResponse.redirect(new URL('/admin/login', request.url))

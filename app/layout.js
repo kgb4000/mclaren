@@ -6,9 +6,7 @@ const archivo = Archivo({
   weight: ['700', '800', '900'],
   variable: '--font-archivo',
 })
-import Footer from './components/Footer'
-import Header from './components/Header'
-import MobileCtaBar from './components/MobileCtaBar'
+import SiteChrome from './components/SiteChrome'
 
 const title = 'Rent a McLaren in Las Vegas | McLaren Rentals From $699'
 const description =
@@ -81,10 +79,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Header />
-        {children}
-        <Footer />
-        <MobileCtaBar />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   )

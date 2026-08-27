@@ -1,3 +1,6 @@
+import { cookies } from 'next/headers'
+import { redirect } from 'next/navigation'
+import { verifySession } from '../../../lib/adminSession'
 import { runTrendsQuery } from '../../../lib/posthog-server'
 import AnalyticsCharts from './AnalyticsCharts'
 
@@ -34,13 +37,24 @@ const QUERIES = {
 }
 
 export default async function AdminAnalyticsPage() {
+  const cookieStore = await cookies()
+  const isValid = await verifySession(cookieStore.get('admin_session')?.value)
+  if (!isValid) {
+    redirect('/admin/login')
+  }
+
   const keys = Object.keys(QUERIES)
   const settled = await Promise.allSettled(keys.map((key) => runTrendsQuery(QUERIES[key])))
 
   const data = {}
   keys.forEach((key, i) => {
     const result = settled[i]
-    data[key] = result.status === 'fulfilled' ? { ok: true, results: result.value } : { ok: false }
+    if (result.status === 'fulfilled') {
+      data[key] = { ok: true, results: result.value }
+    } else {
+      console.error(`PostHog query "${key}" failed:`, result.reason)
+      data[key] = { ok: false }
+    }
   })
 
   return (
